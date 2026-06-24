@@ -7,9 +7,12 @@ A cinematic mango website with a custom Three.js fruit scene, scroll animation, 
 ```text
 Mango/
   index.html
+  package.json
   README.md
   assets/
     .gitkeep
+  scripts/
+    dev-server.js
   src/
     js/
       config.js
@@ -28,10 +31,10 @@ Mango/
 
 ## Run Locally
 
-Because this site uses JavaScript modules, serve it from a local web server:
+Because this site uses JavaScript modules, serve it from the included Node.js server:
 
 ```bash
-python -m http.server 4173
+npm start
 ```
 
 Then open:
