@@ -12,6 +12,7 @@ Mango/
   package.json
   README.md
   assets/
+    favicon.svg
     .gitkeep
     mango-preview.png
   scripts/
