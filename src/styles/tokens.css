@@ -1,0 +1,13 @@
+:root {
+  --ink: #1c1308;
+  --cream: #fff7de;
+  --gold: #ffc43d;
+  --mango: #ff8f1f;
+  --leaf: #2d8f57;
+  --rose: #ff5c7a;
+  --shadow: rgba(43, 21, 2, 0.22);
+  --glass: rgba(255, 248, 222, 0.68);
+  color-scheme: light;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  scroll-behavior: smooth;
+}

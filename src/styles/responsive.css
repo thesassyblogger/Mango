@@ -1,0 +1,91 @@
+@media (max-width: 900px) {
+  .topbar {
+    align-items: flex-start;
+  }
+
+  .topbar nav {
+    max-width: 13rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .hero,
+  .ritual,
+  .reserve {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    align-items: center;
+  }
+
+  .hero__metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .orchard__grid,
+  .country-grid,
+  .variety-orbit {
+    grid-template-columns: 1fr;
+  }
+
+  .story-block,
+  .variety {
+    min-height: 15rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cursor-orb {
+    display: none;
+  }
+
+  .topbar {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0.75rem;
+  }
+
+  .brand {
+    max-width: 8.8rem;
+    width: max-content;
+  }
+
+  .topbar nav {
+    gap: 0.55rem;
+    width: 100%;
+    max-width: none;
+    justify-content: flex-start;
+    padding: 0.65rem;
+  }
+
+  .topbar nav a {
+    font-size: 0.78rem;
+  }
+
+  .panel {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+
+  .hero {
+    padding-top: 10.5rem;
+  }
+
+  .hero__copy > p:not(.eyebrow) {
+    max-width: 20rem;
+  }
+
+  h1 {
+    font-size: clamp(4rem, 21vw, 6.2rem);
+  }
+
+  .hero__metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .slice-stack {
+    width: min(88vw, 24rem);
+  }
+}

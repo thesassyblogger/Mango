@@ -1,0 +1,90 @@
+#mango-scene {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+main {
+  position: relative;
+  z-index: 4;
+}
+
+.panel {
+  min-height: 100svh;
+  padding: clamp(6rem, 10vw, 9rem) clamp(1.1rem, 5vw, 5rem);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(15rem, 0.45fr);
+  align-items: end;
+  gap: 2rem;
+  padding-top: min(18svh, 9rem);
+  padding-bottom: 4rem;
+}
+
+.hero__copy {
+  max-width: 58rem;
+  align-self: center;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.hero__metrics {
+  display: grid;
+  gap: 0.7rem;
+  align-self: end;
+}
+
+.section-heading {
+  margin-bottom: clamp(2rem, 6vw, 5rem);
+}
+
+.section-heading--spaced {
+  margin-top: clamp(4rem, 10vw, 8rem);
+}
+
+.orchard__grid,
+.country-grid,
+.variety-orbit {
+  display: grid;
+  gap: 1rem;
+}
+
+.orchard__grid,
+.country-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ritual {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.9fr) minmax(0, 0.75fr);
+  gap: clamp(1.5rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.ritual__stage {
+  min-height: min(68svh, 48rem);
+  display: grid;
+  place-items: center;
+}
+
+.variety-orbit {
+  min-height: 52svh;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: end;
+}
+
+.reserve {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(18rem, 0.55fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: center;
+}

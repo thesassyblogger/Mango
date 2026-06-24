@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mango</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.165.0/build/three.module.js"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./src/styles/main.css" />
+  </head>
+  <body>
+    <canvas id="mango-scene" aria-label="Animated 3D mango grove"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor-orb" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Mango home">
+        <span class="brand__mark"></span>
+        Mango
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#orchard">Orchard</a>
+        <a href="#ritual">Ritual</a>
+        <a href="#varieties">Varieties</a>
+        <a href="#reserve">Reserve</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero panel" id="home">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Solar fruit, sculpted in motion</p>
+          <h1>Mango</h1>
+          <p>
+            A kinetic mango universe where flavor, light, and craft orbit one
+            glowing seasonal ritual.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#reserve">Taste the drop</a>
+            <a class="button button--ghost" href="#orchard">Enter the grove</a>
+          </div>
+        </div>
+        <div class="hero__metrics reveal" aria-label="Mango facts">
+          <div>
+            <strong>4k+</strong>
+            <span>years of cultivation</span>
+          </div>
+          <div>
+            <strong>Asia</strong>
+            <span>ancient homeland</span>
+          </div>
+          <div>
+            <strong>India</strong>
+            <span>top producer</span>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#orchard" aria-label="Scroll to orchard">
+          <span></span>
+        </a>
+      </section>
+
+      <section class="orchard panel" id="orchard">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Origin story</p>
+          <h2>The mango began as a tropical Asian legend.</h2>
+        </div>
+        <div class="orchard__grid">
+          <article class="story-block reveal">
+            <span>4000+ years</span>
+            <h3>Ancient Roots</h3>
+            <p>
+              Mangoes have been cultivated in South Asia for thousands of years,
+              becoming part of food, medicine, poetry, gardens, and royal gifts.
+            </p>
+          </article>
+          <article class="story-block reveal">
+            <span>Indo-Burma</span>
+            <h3>Birthplace Belt</h3>
+            <p>
+              The cultivated mango is linked to the region around northeastern
+              India, Bangladesh, Myanmar, and the wider Southeast Asian tropics.
+            </p>
+          </article>
+          <article class="story-block reveal">
+            <span>Trade routes</span>
+            <h3>World Traveler</h3>
+            <p>
+              Traders, sailors, and colonizers carried mangoes west to Africa,
+              then onward to Brazil, the Caribbean, Mexico, and Florida.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="ritual panel" id="ritual">
+        <div class="ritual__stage reveal">
+          <div class="slice-stack" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="ritual__copy reveal">
+          <p class="eyebrow">Geography</p>
+          <h2>Mangoes thrive where heat and rain know each other.</h2>
+          <p>
+            Mango trees love tropical and subtropical climates: warm winters,
+            dry flowering seasons, monsoon rain, and long sunlit ripening days.
+            That is why the mango map glows across Asia, Africa, Latin America,
+            the Caribbean, Australia, and parts of the southern United States.
+          </p>
+        </div>
+      </section>
+
+      <section class="varieties panel" id="varieties">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Who grows mangoes?</p>
+          <h2>The mango world has many capitals.</h2>
+        </div>
+        <div class="country-grid" aria-label="Mango growing countries">
+          <article class="country-card reveal">
+            <strong>India</strong>
+            <span>Largest producer; home to Alphonso, Kesar, Dasheri, Langra, Totapuri, and hundreds more.</span>
+          </article>
+          <article class="country-card reveal">
+            <strong>Indonesia</strong>
+            <span>A major producer across humid islands, with mangoes woven into street markets and home gardens.</span>
+          </article>
+          <article class="country-card reveal">
+            <strong>China</strong>
+            <span>Grows mangoes in warm southern regions such as Guangxi, Yunnan, Hainan, and Guangdong.</span>
+          </article>
+          <article class="country-card reveal">
+            <strong>Thailand</strong>
+            <span>Famous for fragrant dessert mangoes, especially with sticky rice and coconut milk.</span>
+          </article>
+          <article class="country-card reveal">
+            <strong>Mexico</strong>
+            <span>A leading exporter to North America, known for Ataulfo, Tommy Atkins, Kent, and Keitt.</span>
+          </article>
+          <article class="country-card reveal">
+            <strong>Pakistan</strong>
+            <span>Celebrated for Chaunsa, Sindhri, Anwar Ratol, and a deep summer mango culture.</span>
+          </article>
+        </div>
+        <div class="section-heading section-heading--spaced reveal">
+          <p class="eyebrow">Flavor constellations</p>
+          <h2>Choose your orbit.</h2>
+        </div>
+        <div class="variety-orbit" aria-label="Mango variety selector">
+          <button class="variety active" data-tone="honey" type="button">
+            <span>Honeyflare</span>
+            <small>floral, silk, bright</small>
+          </button>
+          <button class="variety" data-tone="ember" type="button">
+            <span>Ember Gold</span>
+            <small>tangy, resin, deep</small>
+          </button>
+          <button class="variety" data-tone="jade" type="button">
+            <span>Jade Moon</span>
+            <small>green, crisp, clean</small>
+          </button>
+          <button class="variety" data-tone="rose" type="button">
+            <span>Rose Saffron</span>
+            <small>perfumed, plush, rare</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="reserve panel" id="reserve">
+        <div class="reserve__copy reveal">
+          <p class="eyebrow">Seasonal release</p>
+          <h2>The next crate lands when the fruit says yes.</h2>
+          <p>
+            Join the small-batch list for a sensory mango drop built around
+            perfect ripeness, not a calendar.
+          </p>
+        </div>
+        <form class="reserve__form reveal">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" placeholder="you@example.com" />
+          </label>
+          <button class="button button--primary" type="submit">Request an invite</button>
+          <p class="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
