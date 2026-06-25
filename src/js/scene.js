@@ -127,7 +127,7 @@ export function createMangoScene(canvas) {
     mango.position.y = Math.sin(elapsed * 0.9) * 0.13 + scrollProgress * -0.55;
     mango.scale.setScalar(1 + Math.sin(elapsed * 1.1) * 0.018);
 
-    group.position.x = window.innerWidth < SCENE_SETTINGS.mobileBreakpoint ? 0.7 : 1.85;
+    group.position.x = window.innerWidth < SCENE_SETTINGS.mobileBreakpoint ? 0.95 : 2.2;
     group.position.y = -0.2 + scrollProgress * -1.6;
     group.rotation.z = pointer.x * -0.06;
 
